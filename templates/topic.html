@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TOPIC PAGE</title>
+</head>
+<style>
+    input{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <center>
+        <h1>TOPIC REGISTRATION PAGE</h1>
+            <form method ="post">
+                {% csrf_token %}
+                <label for="tn">TOPIC NAME</label>
+                <input type="text" id="tn" name="tn"><br>
+                <input type="submit" value="submit"><br>
+            </form>
+    </center>
+</body>
+</html>

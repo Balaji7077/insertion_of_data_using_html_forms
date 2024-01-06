@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ACCESSRECORD PAGE</title>
+</head>
+<style>
+    input{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <center>
+        <h1>ACCESSRECORD REGISTRATION PAGE</h1>
+            <form method ="post">
+                {% csrf_token %}
+
+                <label for="n">NAME</label>
+                <input type="text" id="n" name="n"><br>
+
+                <label for="d">DATE OF BIRTH</label>
+                <input type="date" id="d" name="d"><br>
+
+                <label for="a">Author</label>
+                <input type="text" id="a" name="a"><br>
+
+                <input type="submit" value="submit">
+            </form>
+    </center>
+</body>
+</html>
